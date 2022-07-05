@@ -29,6 +29,7 @@ let firstname = id("firstname"),
       errorMsg[serial].innerHTML = "";
       failureIcon[serial].style.opacity = "0"; 
       id.style.border = "2px solid green";
-      alert("Thank you for your visit user")
+      alert("Thank you for your visit user");
+      return true;
     }
   }
