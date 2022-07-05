@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: #ff7a7a;
+  font-family: "Poppins", sans-serif;
+  margin: 150px 0 50px 0; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .container .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center; }
+    .container .content .content-left {
+      color: #FFF; }
+      .container .content .content-left h1 {
+        font-weight: 900;
+        font-size: 3rem; }
+    .container .content .action-button {
+      border: none;
+      width: 100%;
+      height: 60px;
+      background-color: #6055a5;
+      color: #FFF;
+      border-radius: 5px;
+      text-align: center;
+      padding: 5px;
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      box-shadow: 0 8px rgba(0, 0, 0, 0.2); }
+      .container .content .action-button span {
+        font-weight: 800; }
+    .container .content .one {
+      position: relative; }
+      .container .content .one form {
+        width: 100%;
+        background-color: #FFF;
+        text-align: center;
+        margin-top: 30px;
+        padding: 30px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .container .content .one form input {
+          width: 100%;
+          padding: 20px;
+          margin-bottom: 20px;
+          font-family: "Poppins", sans-serif;
+          color: #3e3c49;
+          font-weight: 600;
+          outline: none;
+          border-radius: 5px;
+          border: 2px solid #b9b6d3; }
+          .container .content .one form input:focus {
+            border: 2px solid #6055a5; }
+        .container .content .one form img {
+          position: absolute;
+          margin-left: -36px;
+          margin-top: 19px; }
+        .container .content .one form .failure {
+          opacity: 0; }
+        .container .content .one form .error {
+          color: red;
+          font-size: 10px;
+          margin-top: -16px;
+          margin-bottom: 13px;
+          float: right; }
+        .container .content .one form button {
+          background-color: #38cc8c;
+          color: #fff;
+          text-transform: uppercase;
+          border-radius: 5px;
+          font-size: 16px;
+          height: 60px;
+          font-family: "Poppins", sans-serif;
+          border: 1px solid #38cc8c; }
+          .container .content .one form button:hover {
+            cursor: pointer;
+            background-color: #85e0b9; }
+        .container .content .one form .terms {
+          padding: 5px;
+          font-size: 10px;
+          color: #b9b6d3;
+          font-weight: 600; }
+          .container .content .one form .terms span {
+            color: #ff7a7a; }
+            .container .content .one form .terms span:hover {
+              text-decoration: underline;
+              cursor: pointer; }
+  .container footer {
+    color: #FFF;
+    text-align: center;
+    margin: 40px 0; }
+    .container footer a {
+      color: #FFF; }
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 30px 0;
+    background-color: #ff7a7a;
+    background-image: url(/images/bg-intro-mobile.png); }
+  .container .content {
+    padding: 30px;
+    grid-template-columns: 25rem;
+    grid-template-columns: 1fr; }
+    .container .content .content-left {
+      width: 100%;
+      text-align: center; } }
